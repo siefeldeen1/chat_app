@@ -1,0 +1,262 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto'
+} */
+
+.img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+ul{
+    list-style-type:none
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px  20px;
+    align-items: center;
+}
+
+.nav_cont{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav_headers{
+color: white;
+cursor: pointer;
+transition: 0.6s;
+font-size: 19px;
+}
+.nav_headers:hover{
+    opacity: 0.6;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+}
+
+.actibe_nav{
+    color: #CD9F94;
+  padding-bottom: 2px;
+  padding-right: 3px;
+    border-bottom:#CD9F94 solid 3px ;
+}
+
+.search_inp{
+    background-color: #5C4F81;
+    border-radius: 23px;
+    /* change it into % */
+    height: 7.3vh;
+    border:none;
+    width: 32%;
+    color: white;
+    outline: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    padding:  0 10px ;
+}
+
+.input_its{
+    border:none;
+    width: 100%;
+   color: rgb(236, 234, 234);
+   outline: none;
+   background-color: transparent;
+   height: 100%;
+}
+.search_inp:focus-visible{
+    outline: none;
+}
+.search_inp::placeholder{
+    color: #786D99;
+    font-size: 16px;
+}
+
+.action_btn{
+    color: white;
+    border: 1.5px solid #665a87;
+    border-radius: 20px;
+    padding: 9px 19px;
+    cursor: pointer;
+    transition: 0.5s;
+    word-spacing: 1.5px;
+}
+
+.action_btn:hover{
+    opacity: 0.7;
+}
+
+.container_forchat{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:15px ;
+    gap:5%;
+}
+
+.contact_cont{
+    border-radius: 20px;
+    background-color: #5C4F81;
+    /* width: 35%; */
+    height: 74vh;
+}
+
+.contact_info{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    gap:20px; 
+}
+
+.chat_page{
+    border-radius: 20px;
+    background-color: #5C4F81;
+    /* width: 64%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.chat_body{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+
+.type_inp{
+    background-color: rgb(236, 234, 234);
+    border-radius: 23px;
+    /* change it into % */
+    height: 7vh;
+    border:none;
+    width: 80%;
+    color: rgb(0, 0, 0);
+    outline: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding:  0 10px ;
+}
+.type_inp::placeholder{
+    color: rgb(197, 195, 195);
+}
+
+.lower_part_chat{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    /* height: 98%; */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.type{
+    border:none;
+    width: 100%;
+   color: black;
+   outline: none;
+   background-color: transparent;
+   height: 100%;
+}
+.send_btn{
+    background-color: #3DC5B7;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 10px 14px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.recived_message{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.recived_message_Inner{
+    padding: 5px;
+    background-color: grey;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 10px;
+    color: white;
+}
+.sent_message{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.sent_message_Inner{
+    padding: 5px;
+    background-color: rgb(40, 116, 231);
+    border-radius: 5px;
+    width: fit-content;
+    margin: 10px;
+    color: white;
+}
+
+.logo_img{
+    width: 64px;
+    height: 64px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 0px){
+    .header{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+        width: 100%;
+    }
+    .nav_headers{
+        font-size: 10px;
+    }
+    .logo>div{
+     font-size: 20px;
+    }
+    .container_forchat{
+        width: 100%;
+    }
+    .logo_img{
+        width: 32px;
+        height: 32px;
+    }
+    .nav_dev{
+        display: flex;
+        justify-content: center;
+    }
+  
+}
+/* @media screen and (max-width: 600px) and (min-width: 401px){
+ 
+     
+
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px){
+  
+
+     
+  
+    
+} */

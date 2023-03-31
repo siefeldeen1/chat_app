@@ -1,0 +1,73 @@
+.cont_input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.label_input{
+    font-weight: 500;
+}
+
+.input_class{
+    padding: 10px 13px;
+    /* width: 100%; */
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: .3s;
+}
+
+.input_class:focus,.input_class:hover,.input_class:active{
+    border: 2px solid #0E8388;
+
+}
+
+
+.input2_big_div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input_class2{
+    border: none;
+    outline: none;
+    padding: 10px 3px;
+    /* width: 100%; */
+    outline: none;
+    border-bottom: 1px solid rgb(0 0 0 / 22%);
+    
+}
+
+
+.input_class2:focus+.underline {
+    transform: scale(1);
+  }
+  
+  .underline {
+    background-color: dodgerblue;
+    display: inline-block;
+    height: 2px;
+    left: 0;
+    
+    /* margin-top: -4px; */
+    position: absolute;
+    bottom: 0px;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    width: 100%;
+  } 
+
+  .input_class::-webkit-outer-spin-button,
+  .input_class::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input_class[type=number] {
+    -moz-appearance: textfield;
+  }
