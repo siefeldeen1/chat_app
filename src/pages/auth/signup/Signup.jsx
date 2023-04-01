@@ -23,7 +23,7 @@ function Signup() {
      }else if (confrim_pass != password){
       setconfri_vaild(false)
      }else{
-        fetch(`${import.meta.env.Vite_APP_URL}/signup`,{
+        fetch(`${import.meta.env.VITE_APP_URL}/signup`,{
             method:"POST",
             headers:{"content-type":"application/json"},
             body:JSON.stringify({
