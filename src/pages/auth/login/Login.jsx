@@ -34,7 +34,7 @@ function Login() {
         setpass_valid(false)
        } else {
     
-        fetch('http://localhost:8082/login',{
+        fetch(`${import.meta.env.Vite_URL}/login`,{
             method:"POST",
             headers:{"content-type":"application/json"},
             body:JSON.stringify({

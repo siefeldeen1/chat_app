@@ -23,7 +23,7 @@ function Signup() {
      }else if (confrim_pass != password){
       setconfri_vaild(false)
      }else{
-        fetch('http://localhost:8082/signup',{
+        fetch(`${import.meta.env.Vite_URL}/signup`,{
             method:"POST",
             headers:{"content-type":"application/json"},
             body:JSON.stringify({

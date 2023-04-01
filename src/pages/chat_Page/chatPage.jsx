@@ -9,7 +9,7 @@ import io from "socket.io-client";
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-const socket = io.connect("http://localhost:8082");
+const socket = io.connect(`${import.meta.env.Vite_URL}`);
 
 
 
@@ -24,7 +24,7 @@ function chatPage() {
     useEffect(() => {
         const token = localStorage.getItem("token")
         // console.log(token);
-        fetch("http://localhost:8082/islogged",{
+        fetch(`${import.meta.env.Vite_URL}/islogged`,{
             method:"post",
             headers:{"content-type":"application/json"},
             body:JSON.stringify({
@@ -35,7 +35,7 @@ function chatPage() {
             // console.log("data2",data.user.id);
             setuser_id(data.user.id)
             socket.emit("user_connected",{id:data.user.id})
-            fetch("http://localhost:8082/users")
+            fetch(`${import.meta.env.Vite_URL}/users`)
             .then((res)=>res.json())
             .then((data2)=>{
                 
